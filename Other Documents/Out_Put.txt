@@ -1,0 +1,137 @@
+	goto 1
+2:
+	push  #1
+	push  #1
+	mul 2
+	return
+3:
+	push  #1
+	push  #1
+	mul 2
+	return
+4:
+	push  3.14159
+	return
+5:
+	push  #1
+	call  4, 0
+	push  #2
+	call  3, 1
+	mul 2
+	mul 2
+	return
+6:
+	push  #1
+	push 0
+	eq
+	if_f goto 7
+	push 1
+	goto 8
+7:
+	push  #1
+	push  #1
+	push 1
+	sub 2
+	call  6, 1
+	mul 2
+8:
+	return
+9:
+	push  #1
+	push -987
+	gt
+	if_f goto 10
+	push 6453
+	goto 11
+10:
+	push -1540
+11:
+	return
+12:
+	push  #1
+	push 1
+	le
+	if_f goto 13
+	push  #1
+	goto 14
+13:
+	push  #1
+	push 1
+	sub 2
+	call  12, 1
+	push  #1
+	push 2
+	sub 2
+	call  12, 1
+	add 3
+14:
+	return
+15:
+	push  #1
+	push 0
+	lt
+	if_f goto 16
+	push -1
+	goto 17
+16:
+	push  #1
+	push 0
+	ge
+	push  #1
+	push 10
+	lt
+	and 2
+	if_f goto 18
+	push 5
+	goto 19
+18:
+	push  #1
+	push 10
+	ge
+	push  #1
+	push 20
+	lt
+	and 2
+	if_f goto 20
+	push 15
+	goto 21
+20:
+	push  #1
+	push 20
+	ge
+	push  #1
+	push 30
+	lt
+	and 2
+	if_f goto 22
+	push 25
+	goto 23
+22:
+	push  #1
+	push 30
+	ge
+	push  #1
+	push 40
+	lt
+	and 2
+	if_f goto 24
+	push 35
+	goto 25
+24:
+	push 45
+25:
+23:
+21:
+19:
+17:
+	return
+1:
+	push 3
+	call  12, 1
+	call  6, 1
+	call  9, 1
+	push 5
+	call  6, 1
+	push 6
+	call  2, 1
+	add 3

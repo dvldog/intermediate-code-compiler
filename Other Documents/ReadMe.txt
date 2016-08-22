@@ -1,0 +1,6 @@
+Dilande Roger Jr.
+CS316 Project 4
+/22/2013
+ 
+	The Intermediate-Code Compiler program was compiled using the Eclipse platform.  Accompanying the program is an input file called "Input_1.txt", "Input_2.txt", and "Input_3.txt".  These three text files are different sample test input files.  The results will be printed to an output file called "Out_Put.txt" and. The "Main" class consists of two String arguments that are the input and output files.  These two Strings are passed as arguments to the "setInStream" method of the "Type_Checker" class.  A while loop then returns a single token from the input file through each iteration until the end of file is reached.  The tokens are stored in an array class of "Tokens" objects that contains the string and the token state.  The emitInstructions() method is applied to the category <fun def list and exp> and the results are printed to the file "Out_Put.txt". Once the type checking results are displayed, the input and output files are closed.
+	The "main" method of this program is in the "Type_Checker" class.  The location of the input and output files must be specified in order for the program to run successfully.  The name of the input file will have to be changed in order to try different input files.  A sample output file called "Out_Put.txt" has been attached.

@@ -1,0 +1,4 @@
+boolean comp_test (int i1) (int i2) (float x) =
+   (and (< i1 i2) (<= i1 i2) (> i1 x) (>= x i2) (= i1 i2))
+
+/(comp_test 10 20 4.8e-1)
